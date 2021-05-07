@@ -20,5 +20,6 @@
 ## Controls
 - left mouse button to resurrect cells
 - right mouse button to kill cells
+- you can hold down the button to draw continuously
 - "Next" to move to the next generation
 - "Run" to move to the next generation `iterations_per_sec` amount of times per sec
