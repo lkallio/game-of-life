@@ -38,6 +38,8 @@ int main(int ac, char **av)
 		puts("N can't be 0 or less, defaulting to DEFAULT_TABLE_SIZE.");
 		n = DEFAULT_TABLE_SIZE;
 	}
+	if (n > WIN_SCALE)
+		n = WIN_SCALE; // checking that n is no more than window resolution
 	if (iterations_per_sec <= 0)
 	{
 		puts("Can't have negative or 0 iterations per sec, defaulting to ITERATE_PER_SEC.");
