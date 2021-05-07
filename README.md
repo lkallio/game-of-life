@@ -16,6 +16,7 @@
 
 ## Usage
 - ./gol [cells per row / col] [iterations per sec]
+- if you want to change the window scale, change `WIN_SCALE` in includes/global.h
 
 ## Controls
 - left mouse button to resurrect cells
