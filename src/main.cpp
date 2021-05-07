@@ -45,6 +45,9 @@ int main(int ac, char **av)
 		puts("Can't have negative or 0 iterations per sec, defaulting to ITERATE_PER_SEC.");
 		iterations_per_sec = ITERATE_PER_SEC;
 	}
+	if (iterations_per_sec > 60)
+		iterations_per_sec = 60; // checking that the resulting fps is no higher than standard displays
+
 	GoL win (n, iterations_per_sec);
 
 	return (app->run(win)); // run the gtkmm loop.
