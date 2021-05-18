@@ -148,7 +148,7 @@ void Table::iterate()
 	int	num_surrounding_cells;
 
 	/*
-	 Uses a temporary bool VLA to make sure that
+	 Uses a temporary bool vector to make sure that
 	 all of the new values for the cells are taken
 	 from the previous generation.
 	 */
@@ -174,7 +174,7 @@ void Table::iterate()
 		}
 	}
 	/*
-	 Moves the values from the temporary VLA to
+	 Moves the values from the temporary vector to
 	 the primary array, moving the cells to the next generation.
 	 */
 	cells = next_generation;
