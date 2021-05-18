@@ -2,7 +2,7 @@ NAME = gol
 SRC = gol.cpp main.cpp table.cpp
 SRCDIR = src/
 INC = includes/
-FLAGS = -std=c++17
+FLAGS = -std=c++11
 PKG_CONFIG = `pkg-config gtkmm-3.0 --cflags --libs`
 
 .PHONY: all clean re

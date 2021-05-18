@@ -16,9 +16,9 @@ GoL::~GoL(){}
 /*
  master is initialized as vertical to pack the buttons below the cells.
  */
-GoL::GoL(int n, int it_per_sec) : table(n), buttons(), master(Gtk::ORIENTATION_VERTICAL)
+GoL::GoL(int cells_per_row, int it_per_sec) : table(cells_per_row), buttons(), master(Gtk::ORIENTATION_VERTICAL)
 {
-	int scale = (WIN_SCALE / n) * n;
+	int scale = (WIN_SCALE / cells_per_row) * cells_per_row;
 
 	/*
 	 The window will be sized according to WIN_SCALE variable.

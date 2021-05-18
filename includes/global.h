@@ -2,7 +2,8 @@
 #define GLOBAL_H
 
 #include <gtkmm.h>
+#include <iostream>
 
-#define WIN_SCALE	750
+static constexpr int WIN_SCALE	= 750;
 
 #endif
